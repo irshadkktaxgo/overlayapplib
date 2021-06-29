@@ -1,0 +1,17 @@
+com/overlayapp/MainApplication.java
+ com.overlayapp.MainApplication
+ com.overlayapp.MainApplication$1
+com/overlayapp/BuildConfig.java
+ com.overlayapp.BuildConfig
+com/overlayapp/MainActivity.java
+ com.overlayapp.MainActivity
+ com.overlayapp.MainActivity$1
+com/overlayapp/generated/BasePackageList.java
+ com.overlayapp.generated.BasePackageList
+com/overlayapp/ReactNativeFlipper.java
+ com.overlayapp.ReactNativeFlipper
+ com.overlayapp.ReactNativeFlipper$1
+ com.overlayapp.ReactNativeFlipper$2
+ com.overlayapp.ReactNativeFlipper$2$1
+com/facebook/react/PackageList.java
+ com.facebook.react.PackageList

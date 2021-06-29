@@ -1,4 +1,12 @@
 {
-  "name": "testApp",
-  "displayName": "testApp"
+  "name": "overlay-app",
+  "displayName": "overlay-app",
+  "expo": {
+    "name": "overlay-app",
+    "slug": "overlay-app",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
 }
