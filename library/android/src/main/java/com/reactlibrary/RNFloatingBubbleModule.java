@@ -18,6 +18,8 @@ import android.content.Intent;
 import android.provider.Settings;
 import android.net.Uri;
 import android.widget.Button;
+import android.widget.TextView;
+
 
 import com.txusballesteros.bubbles.BubbleLayout;
 import com.txusballesteros.bubbles.BubblesManager;
@@ -53,6 +55,14 @@ public class RNFloatingBubbleModule extends ReactContextBaseJavaModule {
     return "RNFloatingBubble";
   }
 
+  @ReactMethod // Notates a method that should be exposed to React
+  public void passJourney(String x, final Promise promise) {
+    try {  
+      promise.resolve("data got is x:- "+x);
+    } catch (Exception e) {
+      promise.reject("");
+    }
+  }  
   @ReactMethod // Notates a method that should be exposed to React
   public void showFloatingBubble(int x, int y, final Promise promise) {
     try {
@@ -129,7 +139,12 @@ public class RNFloatingBubbleModule extends ReactContextBaseJavaModule {
                  // Toast.makeText(this, "Hey Button is pressed !!",
                  // Toast.LENGTH_SHORT).show();
                 //  ToastToDisplay("Hey Button is pressed!!");
-                sendEvent("floating-bubble-press-next");
+      //           sendEvent("floating-bubble-press-next");
+      //           bubbleView = (BubbleLayout) LayoutInflater.from(reactContext).inflate(R.layout.bubble_layout, null);
+      // TextView myTextView = (TextView) bubbleView.findViewById(R.id.textView);
+      Button next1 = (Button) bubbleView.findViewById(R.id.next);
+      next1.setText("next pressed");
+
             }
          });
     Button done = (Button) bubbleView.findViewById(R.id.done);
@@ -142,7 +157,9 @@ public class RNFloatingBubbleModule extends ReactContextBaseJavaModule {
                  // Toast.makeText(this, "Hey Button is pressed !!",
                  // Toast.LENGTH_SHORT).show();
                 //  ToastToDisplay("Hey Button is pressed!!");
-                 sendEvent("floating-bubble-press-done");
+                //  sendEvent("floating-bubble-press-done");
+                Button done1 = (Button) bubbleView.findViewById(R.id.done);
+                done1.setText("done pressed");
             }
          });
   }
