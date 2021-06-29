@@ -141,10 +141,10 @@ public class RNFloatingBubbleModule extends ReactContextBaseJavaModule {
 
             @Override
             public void onClick(View arg0) {
-                Button next1 = (Button) bubbleView.findViewById(R.id.next);
-                next1.setText("next pressed");
-                TextView textviewid = (TextView) bubbleView.findViewById(R.id.textviewid);
-                textviewid.setText("next pressed");
+                // Button next1 = (Button) bubbleView.findViewById(R.id.next);
+                // next1.setText("next pressed");
+                // TextView textviewid = (TextView) bubbleView.findViewById(R.id.textviewid);
+                // textviewid.setText("next pressed");
                 sendEvent("floating-bubble-press-next");
 
             }
@@ -154,10 +154,10 @@ public class RNFloatingBubbleModule extends ReactContextBaseJavaModule {
 
             @Override
             public void onClick(View arg0) {
-                Button done1 = (Button) bubbleView.findViewById(R.id.done);
-                done1.setText("done pressed");
-                TextView textviewid = (TextView) bubbleView.findViewById(R.id.textviewid);
-                textviewid.setText("done pressed");
+                // Button done1 = (Button) bubbleView.findViewById(R.id.done);
+                // done1.setText("done pressed");
+                // TextView textviewid = (TextView) bubbleView.findViewById(R.id.textviewid);
+                // textviewid.setText("done pressed");
                 sendEvent("floating-bubble-press-done");
             }
         });
