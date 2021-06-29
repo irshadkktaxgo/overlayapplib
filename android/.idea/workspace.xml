@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0f5e24ef-ac7d-4adb-a6e6-70975c136e20" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../library/android/src/main/java/com/reactlibrary/RNFloatingBubbleModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/../library/android/src/main/java/com/reactlibrary/RNFloatingBubbleModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../library/android/src/main/res/layout/bubble_layout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../library/android/src/main/res/layout/bubble_layout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../overlay-app" beforeDir="false" afterPath="$PROJECT_DIR$/../overlay-app" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1ubZwTSIHKhADpG3ZfEcTVAeOnI" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0f5e24ef-ac7d-4adb-a6e6-70975c136e20" name="Default Changelist" comment="" />
+      <created>1624936487925</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1624936487925</updated>
+    </task>
+    <servers />
+  </component>
+</project>
