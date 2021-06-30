@@ -22,16 +22,25 @@
         android:background="@drawable/profile_decorator"
         android:src="@drawable/bubble_icon"
         android:scaleType="centerCrop"/> -->
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:orientation="vertical" >
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="10dp"
+    android:paddingTop="7dp"
+    android:paddingRight="7dp"
+    android:paddingBottom="7dp">
 
-        <TextView
-            android:id="@+id/textviewid"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="-" />
+    <TextView
+        android:id="@+id/textviewid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFB43E"
+        android:padding="10dp"
+        android:text="1"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
             <!-- <Button
             android:id="@+id/text"
             android:layout_width="match_parent"
@@ -39,17 +48,48 @@
             android:text="-" /> -->
 
         <Button
-            android:id="@+id/next"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Next" />
-        <Button
+                android:id="@+id/next"
+                android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:width="150dp"
+        android:background="#4287F5"
+        android:padding="7dp"
+        android:text="Next Stop"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/done"
+                android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="450px"
+        android:layout_marginLeft="450px"
+        android:layout_marginTop="70dp"
+        android:width="150dp"
+        android:background="#FFB43E"
+        android:text="Routes"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+       <!-- <Button
             android:id="@+id/done"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="List" />
 
+            <Button
+            android:id="@+id/done"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/btn_bg_selector"
+            android:padding="8dp"
+            android:text="Colored Selector" />-->
 
 
-    </LinearLayout>
+
+    </FrameLayout>
 </com.txusballesteros.bubbles.BubbleLayout>

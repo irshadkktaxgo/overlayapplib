@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.txusballesteros:bubbles-for-android:develop-SNAPSHOT@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/abb38ed425f346b8643e47c10ee410e4/transformed/jetified-bubbles-for-android-develop-SNAPSHOT/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/abb38ed425f346b8643e47c10ee410e4/transformed/jetified-bubbles-for-android-develop-SNAPSHOT/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/abb38ed425f346b8643e47c10ee410e4/transformed/jetified-bubbles-for-android-develop-SNAPSHOT/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.txusballesteros/bubbles-for-android/develop-SNAPSHOT/8d6d3d0f024a6bd967e9f94bf93db4ee55ebb6c0/bubbles-for-android-develop-SNAPSHOT-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.txusballesteros/bubbles-for-android/develop-SNAPSHOT/7487e16fddcbb49381273c5a91ca2e9cccb9879e/bubbles-for-android-develop-SNAPSHOT-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

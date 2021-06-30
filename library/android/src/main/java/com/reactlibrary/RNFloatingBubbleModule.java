@@ -29,7 +29,7 @@ public class RNFloatingBubbleModule extends ReactContextBaseJavaModule {
     private BubblesManager bubblesManager;
     private final ReactApplicationContext reactContext;
     private BubbleLayout bubbleView;
-
+    public int newData = 1;
     public RNFloatingBubbleModule(ReactApplicationContext reactContext) {
         super(reactContext);
         this.reactContext = reactContext;
@@ -52,6 +52,15 @@ public class RNFloatingBubbleModule extends ReactContextBaseJavaModule {
     @Override
     public String getName() {
         return "RNFloatingBubble";
+    }
+    
+    public int getNewData() {
+        return newData;
+    }
+
+    public void setNewData(int newName) {
+        this.newData = newName;
+        //return newName;
     }
 
     @ReactMethod // Notates a method that should be exposed to React
@@ -118,8 +127,12 @@ public class RNFloatingBubbleModule extends ReactContextBaseJavaModule {
     }
 
     private void addNewBubble(int x, int y) {
+        //final int index = 1;
+        //setNewData(x);
         this.removeBubble();
         bubbleView = (BubbleLayout) LayoutInflater.from(reactContext).inflate(R.layout.bubble_layout, null);
+        TextView textviewid = (TextView) bubbleView.findViewById(R.id.textviewid);
+        textviewid.setText(""+ getNewData());
         bubbleView.setOnBubbleRemoveListener(new BubbleLayout.OnBubbleRemoveListener() {
             @Override
             public void onBubbleRemoved(BubbleLayout bubble) {
@@ -156,9 +169,16 @@ public class RNFloatingBubbleModule extends ReactContextBaseJavaModule {
             public void onClick(View arg0) {
                 // Button done1 = (Button) bubbleView.findViewById(R.id.done);
                 // done1.setText("done pressed");
-                // TextView textviewid = (TextView) bubbleView.findViewById(R.id.textviewid);
-                // textviewid.setText("done pressed");
+                //TextView textviewid2 = (TextView) bubbleView.findViewById(R.id.textviewid);
+                //textviewid2.setText(index+1);
+                TextView textviewid2 = (TextView) bubbleView.findViewById(R.id.textviewid);
+                int nextData = getNewData() + 1;
+                textviewid2.setText(""+newData);
+                
                 sendEvent("floating-bubble-press-done");
+                setNewData(nextData);
+                //index++;
+                //x++;
             }
         });
     }
