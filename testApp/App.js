@@ -147,11 +147,34 @@ const App = () => {
     checkPermission()
       .then((value) => showToast(`Permission: ${value ? "Yes" : "No"}`))
       .catch(() => showToast("Failed to check"));
+
   const onInit = () =>
     initialize()
       .then(() => showToast("Init"))
       .catch(() => showToast("Failed init"));
   useEffect(() => {
+    const onInitAll = async () => {
+      console.log(" ********** initing all methods **********");
+      console.log(" checking perminssion ");
+      const _checkPermission = await checkPermission();
+      console.log(1, _checkPermission);
+
+      console.log(" _requestPermission  ");
+      const _requestPermission = await requestPermission();
+      console.log(2, _requestPermission);
+
+      console.log(" inittializing   ");
+      const _initialize = await initialize();
+      console.log(3, _initialize);
+
+      console.log(" ********** initing all methods **********");
+
+      // console.log(" inittializing   ");
+      // const _initialize = await initialize();
+      // console.log(_initialize);
+    };
+    onInitAll();
+
     const subscriptionPress = DeviceEventEmitter.addListener(
       "floating-bubble-press-irsahd",
       function (e) {

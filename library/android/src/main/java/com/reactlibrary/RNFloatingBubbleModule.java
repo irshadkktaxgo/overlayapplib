@@ -66,16 +66,19 @@ public class RNFloatingBubbleModule extends ReactContextBaseJavaModule {
     @ReactMethod // Notates a method that should be exposed to React
     public void passJourney(String x, final Promise promise) {
         try {
-            TextView textviewid = (TextView) bubbleView.findViewById(R.id.textviewid);
-            textviewid.setText(x);
+            // TextView textviewid = (TextView) bubbleView.findViewById(R.id.textviewid);
+            // textviewid.setText(x);
+            // Intent intent = new Intent(android.content.Intent.ACTION_VIEW,
+            //         Uri.parse("http://maps.google.com/maps?saddr=20.344,34.34&daddr=20.5666,45.345"));
             Intent intent = new Intent(android.content.Intent.ACTION_VIEW,
-                    Uri.parse("http://maps.google.com/maps?saddr=20.344,34.34&daddr=20.5666,45.345"));
+                    Uri.parse("https://www.google.com/maps/dir/?api=1&travelmode=driving&dir_action=navigate&origin=11.4822236,75.9909821&destination=11.488039,76.0130784"));
 //            startActivity(intent);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             this.reactContext.startActivity(intent);
-            sendEvent("floating-bubble-pass-journey-executed");
-            promise.resolve("data got is x:- " + x);
+            // sendEvent("floating-bubble-pass-journey-executed");
+            promise.resolve("data got is x:- " );
         } catch (Exception e) {
-            promise.reject("");
+            promise.reject(e);
         }
     }
 
